@@ -1,0 +1,100 @@
+/*main {
+	padding: 0px 0px;
+	margin: 0px 0px;
+}*/
+
+* {
+	color: white;
+	font-family: fantasy;
+}
+
+body {
+/*  background-image: url('../images/winking-ken.gif');
+	background-size: contain;*/
+	background-color : black;
+}
+
+div {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+section {
+	background-color: blue;
+	display: flex;
+	justify-content: space-between;
+	border: 2px solid yellow;
+	border-radius: 15px;
+	margin-right: 5vw;
+	margin-left: 5vw;
+	box-shadow: 3px 3px 3px green;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+a {
+	text-decoration-line: unset;
+}
+
+.title {
+	background-position: center;
+  	text-align: center;
+}
+
+.info {
+
+}
+
+.info-text {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.rounded {
+/*	justify-content: space-between;*/
+	border-radius: 30px;
+}
+
+.about {
+	justify-content: space-around;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.about-card {
+	margin-top: 5px;
+	text-align: center;
+}
+
+.about-circle {
+	border-color: yellow;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: 3px 3px 3px green;
+	font-size: 30px;
+	min-width: 100px;
+	text-align: center;
+}
+
+.footer-section {
+	border-bottom: 0px;
+	box-shadow: 3px 0px 3px green;
+}
+
+
+/*.footer-author {
+	font-size: 150%;
+}*/
+
+.footer-part {
+/*	border: 1px solid red;*/
+	padding: 5px 5px;
+}
+
+.contacts {
+	background-size: contain;
+}
+
+/*.vk {
+	background-image: url('images/vk-logo.png');
+}*/
