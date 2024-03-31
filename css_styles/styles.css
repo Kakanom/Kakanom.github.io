@@ -5,25 +5,27 @@
 
 * {
 	color: white;
-	font-family: fantasy;
+	font-family: "Gill Sans", sans-serif;
+/*	background-image: url('../images/gragor2.jpg');*/
+	background-size: contain;
 }
 
 body {
-/*  background-image: url('../images/winking-ken.gif');
+/*	background-image: url('../images/Me.png');
 	background-size: contain;*/
 	background-color : black;
 }
 
 div {
-	margin-bottom: 0px;
-	padding-bottom: 0px;
+	margin: 0px 0px;
+	padding: 0px 0px;
 }
 
 section {
-	background-color: blue;
+/*	background-color: blue; */
 	display: flex;
 	justify-content: space-between;
-	border: 2px solid yellow;
+	border: hidden solid white;
 	border-radius: 15px;
 	margin-right: 5vw;
 	margin-left: 5vw;
@@ -67,18 +69,21 @@ a {
 }
 
 .about-circle {
-	border-color: yellow;
-	border-style: solid;
-	border-width: 1px;
+	border: hidden solid white;
 	box-shadow: 3px 3px 3px green;
 	font-size: 30px;
 	min-width: 100px;
 	text-align: center;
+	padding: 3px 10px;
+}
+
+.about-circle:hover {
+	box-shadow: 3px 3px 3px yellow;
 }
 
 .footer-section {
 	border-bottom: 0px;
-	box-shadow: 3px 0px 3px green;
+/*	box-shadow: 3px 0px 3px green;*/
 }
 
 
@@ -93,8 +98,17 @@ a {
 
 .contacts {
 	background-size: contain;
+	justify-content: space-around;
 }
 
 /*.vk {
 	background-image: url('images/vk-logo.png');
 }*/
+
+.logo {
+	background-size: contain;
+	border : hidden;
+	background-color: black;
+	float: right;
+/*	align-items: right;*/
+}
