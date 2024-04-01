@@ -7,7 +7,7 @@
 	color: white;
 	font-family: "Gill Sans", sans-serif;
 /*	background-image: url('../images/gragor2.jpg');*/
-	background-size: contain;
+/*	background-size: contain;*/
 }
 
 body {
@@ -37,6 +37,7 @@ section {
 a {
 	text-decoration-line: unset;
 	font-family: fantasy;
+	color: yellow;
 }
 
 .title {
@@ -49,19 +50,18 @@ a {
 }
 
 .info-text {
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 1vw;
+	padding-right: 1vw;
 }
 
 .rounded {
-/*	justify-content: space-between;*/
 	border-radius: 30px;
 }
 
 .about {
 	justify-content: space-around;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 2vw;
+	margin-bottom: 2vw;
 }
 
 .about-card {
@@ -72,8 +72,8 @@ a {
 .about-circle {
 	border: hidden solid white;
 	box-shadow: 3px 3px 3px green;
-	font-size: 30px;
-	min-width: 100px;
+	font-size: 3vw;
+	min-width: 10vw;
 	text-align: center;
 	padding: 3px 10px;
 }
@@ -87,11 +87,6 @@ a {
 /*	box-shadow: 3px 0px 3px green;*/
 }
 
-
-/*.footer-author {
-	font-size: 150%;
-}*/
-
 .footer-part {
 /*	border: 1px solid red;*/
 	padding: 5px 5px;
@@ -104,15 +99,8 @@ a {
 
 }
 
-/*.vk {
-	background-image: url('images/vk-logo.png');
-}*/
-
 .logo {
-	background-size: contain;
 	border : hidden;
-	background-color: black;
-	float: right;
-	background-size: cover;
-/*	align-items: right;*/
+	background-color: transparent;
+	background-image: url('images/tg-logo.png');
 }
