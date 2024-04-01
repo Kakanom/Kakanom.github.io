@@ -6,13 +6,10 @@
 * {
 	color: white;
 	font-family: "Gill Sans", sans-serif;
-/*	background-image: url('../images/gragor2.jpg');*/
-/*	background-size: contain;*/
+	font-size: 1.4vw;
 }
 
 body {
-/*	background-image: url('../images/Me.png');
-	background-size: contain;*/
 	background-color : black;
 }
 
@@ -22,7 +19,6 @@ div {
 }
 
 section {
-/*	background-color: blue; */
 	display: flex;
 	justify-content: space-between;
 	border: hidden solid white;
