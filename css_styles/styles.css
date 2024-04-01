@@ -36,6 +36,7 @@ section {
 
 a {
 	text-decoration-line: unset;
+	font-family: fantasy;
 }
 
 .title {
@@ -99,6 +100,8 @@ a {
 .contacts {
 	background-size: contain;
 	justify-content: space-around;
+	display: flex;
+
 }
 
 /*.vk {
@@ -110,5 +113,6 @@ a {
 	border : hidden;
 	background-color: black;
 	float: right;
+	background-size: cover;
 /*	align-items: right;*/
 }
