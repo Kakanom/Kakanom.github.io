@@ -6,7 +6,7 @@
 * {
 	color: white;
 	font-family: "Gill Sans", sans-serif;
-	font-size: 1.6vw;
+	font-size: 2vw;
 }
 
 body {
@@ -46,20 +46,24 @@ a {
 	display: flex;
 }
 
-.info-container {
+.info__container {
 	display: block;
 }
 
 
-.info-image-container {
+.info__image-container {
 	display: flex;
 	align-items: center;
 }
 
-.info-title {
+.info__title {
 	text-align: center;	
 	padding-left: 1vw;
 	padding-right: 1vw;
+}
+
+.info__line {
+	font-size : 1.7vw
 }
 
 .rounded {
@@ -77,18 +81,23 @@ a {
 	margin-bottom: 2vw;
 }
 
-.about-card {
+.about__card {
 	margin-top: 5px;
+	justify-content: space-around;
+	align-items: center;
 	text-align: center;
 }
 
 .about-circle {
+	display: inline-flex;
 	border: hidden solid white;
 	box-shadow: 3px 3px 3px green;
 	font-size: 3vw;
-	min-width: 10vw;
 	text-align: center;
 	padding: 3px 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	width: 20vw;
 }
 
 .about-circle:hover {
@@ -130,6 +139,15 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.gallery-container {
+	display: block;
+	min-height: 500px;
+}
+
+.gallery {
+	border: hidden;
 }
 
 @media (max-width: 768px) {
