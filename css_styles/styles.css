@@ -56,7 +56,8 @@ a {
 	align-items: center;
 }
 
-.info-text {
+.info-title {
+	text-align: center;	
 	padding-left: 1vw;
 	padding-right: 1vw;
 }
@@ -66,7 +67,7 @@ a {
 }
 
 .my-photo {
-  height: 60vw;
+  height: 50vw;
   border-radius: 20px;
 }
 
@@ -133,11 +134,17 @@ a {
 
 @media (max-width: 768px) {
 	/* For mobile phones: */
-	section {
+	.info {
 	    flex-direction: column-reverse;
 	    justify-content: center;
 	    flex-wrap: wrap;
 	    align-items: center;
+	}
+	.about {
+	    flex-direction: column;
+	    justify-content: center;
+	    flex-wrap: wrap;
+    	align-items: center;
 	}
 }
 
