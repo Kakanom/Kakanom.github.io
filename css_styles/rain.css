@@ -1,0 +1,36 @@
+.rain {
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/rain.png');
+    background-size: contain;
+    background-position: 0px 0px;
+    animation: animatedBackground 5s linear infinite;
+    z-index: 9999;
+}
+
+.rain__button {
+    font-size: 3vw;
+    cursor: pointer;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    background-image: linear-gradient(to right, #009245, #FCEE21, #00A8C5, #D9E021);
+    box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
+    color: yellow;
+}
+
+.rain__button:hover {
+    background-position: 100% 0;
+    transition: all .4s ease-in-out;
+}
+
+
+@keyframes animatedBackground {
+  0% {
+      background-position: 0 0;
+  }
+
+  100% {
+      background-position: -1000px 3000px;
+  }
+}

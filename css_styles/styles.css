@@ -10,31 +10,36 @@
 }
 
 body {
-	background-color : black;
+/*	background-color : black;*/
+/*background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);*/
+        background-color: black;
 }
 
 div {
-	margin: 0px 0px;
-	padding: 0px 0px;
 	justify-content: center;
 }
 
 section {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	align-items: ;
 	border: hidden solid white;
 	border-radius: 15px;
 	margin-right: 5vw;
 	margin-left: 5vw;
 	box-shadow: 3px 3px 3px green;
-	margin-bottom: 0px;
-	margin-top: 0px;
 }
 
 a {
 	text-decoration-line: unset;
 	font-family: fantasy;
 	color: yellow;
+}
+
+h2 {
+	text-align: center;
 }
 
 .title {
@@ -75,10 +80,16 @@ a {
   border-radius: 20px;
 }
 
-.about {
+.cards {
+	display: flex;
+	flex-direction: row;
+}
+
+.about-section {
 	justify-content: space-around;
 	margin-top: 2vw;
 	margin-bottom: 2vw;
+	flex-direction: column;
 }
 
 .about__card {
@@ -98,20 +109,20 @@ a {
 	margin-right: 10px;
 	margin-left: 10px;
 	width: 20vw;
+	transition: box-shadow 0.3s ease;
 }
 
 .about-circle:hover {
 	box-shadow: 3px 3px 3px yellow;
 }
 
-.footer-section {
+.footer__section {
 	border-bottom: 0px;
-	display: block;
-/*	box-shadow: 3px 0px 3px green;*/
+	display: flex;
+	flex-direction: column;
 }
 
 .footer-part {
-/*	border: 1px solid red;*/
 	padding: 5px 5px;
 }
 
@@ -141,13 +152,29 @@ a {
 	justify-content: center;
 }
 
-.gallery-container {
-	display: block;
-	min-height: 500px;
+.gallery-section {
+	flex-direction: column;
 }
 
-.gallery {
-	border: hidden;
+.footer__feedback {
+	display: flex;
+	padding-top: 1vh;
+}
+
+button {
+    font-size: 3vw;
+    cursor: pointer;
+    text-align:center;
+    color: black;
+}
+
+.feedback__button {
+    background-image: linear-gradient(to right, #009245, #FCEE21, #00A8C5, #D9E021);
+    border: none;
+}
+
+.feedback__button:hover {
+	transform: scale(0.99);
 }
 
 @media (max-width: 768px) {
@@ -165,4 +192,3 @@ a {
     	align-items: center;
 	}
 }
-

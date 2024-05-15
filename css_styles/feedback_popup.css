@@ -1,0 +1,50 @@
+.feedback__popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+}
+
+.feedback__popup.opened {
+  animation: animatedAppearance 0.4s linear;
+  display: block;
+}
+
+@keyframes animatedAppearance {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+.form__input {
+  color: black;
+}
+
+.form__textarea {
+  color: black;
+}
+
+.form__submit.disabled {
+  cursor: not-allowed;
+  background-color: #ccc;
+}
+
+.submit__button {
+  color: black;
+  cursor: pointer;
+}
+
+.popup__close {
+  cursor: pointer;
+}

@@ -1,72 +1,146 @@
 <!DOCTYPE html>
-<html>
+<html >
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portfolio">
   <meta name="keywords" content="Kakanom, MIPT, HSSE">
   <meta name="author" content="Smirnov Mark">
-  <link rel="stylesheet" href="css_styles/styles.css">  
+  <link rel="stylesheet" href="css_styles/gallery_styles.css">
+  <link rel="stylesheet" href="css_styles/popup.css">
+  <link rel="stylesheet" href="css_styles/styles.css">
+  <link rel="stylesheet" href="css_styles/feedback_popup.css">
+  <link rel="stylesheet" href="css_styles/rain.css">
+  <link rel="stylesheet" href="css_styles/menu.css">
+  <link rel="stylesheet" href="css_styles/timer.css">
+  <link rel="stylesheet" href="css_styles/reminder.css">
+
   <title>Портфолио</title>
 </head>
 <body>
-  <header class='header'>
-    <h1 class='title'>Smirnov Mark</h1>
-  </header>
+  <!-- Дождь -->
+  <div id='rain'>
+    <header class='header'>
+      <nav class="menu rounded">
+        <ul class="menu__list">
+          <li><a href="#info">Info</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#timer">Timer</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+        </ul>
+      <div class="menu__buttons">
+         <button class="rain__button rounded" id="rain-button">Let it rain!</button>
+      </div> 
+      </nav> 
+    </header>
 
-  <main>
-    <section class='info'> 
-      <div class='info__container'>
-        <h2 class='info__title'>C++ Hater, Contest Enjoyer, ML Ambassador</h1>
-        <h2 class='info__line'>I am <a target="_blank" href="https://hsse.mipt.ru">MIPT HSSE</a> student</h1>
-        <p> Предварительные выводы неутешительны: разбавленное изрядной долей эмпатии, рациональное мышление требует определения и уточнения поэтапного и последовательного развития общества. С учётом сложившейся международной обстановки, начало повседневной работы по формированию позиции прекрасно подходит для реализации дальнейших направлений развития. Но социально-экономическое развитие способствует подготовке и реализации благоприятных перспектив. </p>
+    <main>
+      <h1 class='title'>Smirnov Mark</h1>
+      <section class='info' id="info">
+        <div class='info__container' id='rain'>
+          <h2 class='info__title'>C++ Hater, Contest Enjoyer, ML Ambassador</h1>
+          <h2 class='info__line'>I am <a target="_blank" href="https://hsse.mipt.ru">MIPT HSSE</a> student</h1>
+          <p> Предварительные выводы неутешительны: разбавленное изрядной долей эмпатии, рациональное мышление требует определения и уточнения поэтапного и последовательного развития общества. С учётом сложившейся международной обстановки, начало повседневной работы по формированию позиции прекрасно подходит для реализации дальнейших направлений развития. Но социально-экономическое развитие способствует подготовке и реализации благоприятных перспектив. </p>
+        </div>
+        <div class='info__image-container'>
+          <image class='my-photo' src="images/Me.png" alt='My photo'>
+        </div>
+      </section>
+
+      <section class="about-section" id="about">
+        <h2>About me</h2>
+        <div class='cards'>
+          <div class='about__card'>
+            <div class='rounded about-circle'>
+              <p>Education</p>
+            </div>
+            <p>Secondary education in <a target="_blank" href="https://school33.edu.yar.ru">Yaroslavl's school №33</a></p>
+            <p>Currently studying at <a target="_blank" href="https://hsse.mipt.ru">MIPT HSSE</a></p>
+          </div>
+          <div class='about__card'>
+            <div class='rounded about-circle'>
+              <p>Skills</p>
+            </div>
+            <p>C++, Python, SQL</p>
+            <p>A little bit of HTML, CSS</p>
+          </div>
+          <div class='about__card'>
+            <div class='rounded about-circle'>
+              <p>Projects</p>
+            </div>
+            <p>Tool library which was conceived as an <a target="_blank" href="https://github.com/Kakanom/Machine-learning">ML project</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Галерея -->
+    <section class="gallery-section" id="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery">
+          <img class="gallery__item" src="images/albanec.jpg" alt="Изображение 1">
+          <img class="gallery__item" src="images/images.jpeg" alt="Изображение 2">
+          <img class="gallery__item" src="images/barbie-ryan-gosling.gif" alt="Изображение 3">
       </div>
-      <div class='info__image-container'>
-        <image class='my-photo' src="images/Me.png" alt='My photo'>
+      <div class="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <img class="popup-img" src="" alt="Увеличенное изображение">
+        <span class="prev" onclick="prevPopup()">&#10094;</span>
+        <span class="next" onclick="nextPopup()">&#10095;</span>
       </div>
     </section>
 
-    <section class='about'>
-      <div class='about__card'>
-        <div class='rounded about-circle'>
-          <p>Education</p>
-        </div>
-        <p>Secondary education in <a target="_blank" href="https://school33.edu.yar.ru">Yaroslavl's school №33</a></p>
-        <p>Currently studying at <a target="_blank" href="https://hsse.mipt.ru">MIPT HSSE</a></p>
-      </div>
-      <div class='about__card'>
-        <div class='rounded about-circle'>
-          <p>Skills</p>
-        </div>
-        <p>C++, Python, SQL</p>
-        <p>A little bit of HTML, CSS</p>
-      </div>
-      <div class='about__card'>
-        <div class='rounded about-circle'>
-          <p>Projects</p>
-        </div>
-        <p>Tool library which was conceived as an <a target="_blank" href="https://github.com/Kakanom/Machine-learning">ML project</a></p>
+    <section class="timer" id="timer">
+      <div class="timer__container" id="countdown-container">
+        <h2 class="timer__title">Time before graduating MIPT:</h2>
+        <div class="timer__time" id="countdown"></div>
       </div>
     </section>
-  </main>
 
-<!--   <section class='gallery-container'>
-    <iframe class='gallery rounded' id="gallery" title="gallery" width="100%" height="100%"
-    src="gallery_slider/gallery.html">
-    </iframe>
-  </section> -->
-
-  <footer>
-    <section class='footer-section'>
-      <div class='footer-part'>
-        <div class='contact-container'>
-          <a class='logo' target="_blank" href='https://vk.com/smyark'> <img class='image-icon' src="images/vk-logo.png" alt="vk-logo"></a>
-          <a class='logo' target="_blank" href='https://t.me/Smyark1'> <img class='image-icon' src="images/tg-logo.png" alt="tg-logo"></a>
-          <a class='logo' target="_blank" href='https://github.com/Kakanom'> <img class='image-icon' src="images/github-logo.png" alt="github-logo"></a>
+    <footer>
+      <section class='footer__section' id="contacts">
+        <!-- Обратная связь -->
+        <div class='footer__feedback'>
+          <button class="feedback__button rounded" id="feedback__button">Open the feedback form</button>
+          <div class="feedback__popup" id="feedback__popup" >
+            <span class="popup__close" onclick="closePopup()">×</span>
+            <form id="feedback__form" class="form">
+              <h3>Fill in the gaps</h3>
+              <input type="text" id="name" class="form__input form__input_name" placeholder="Name">
+              <input type="tel" id="phone" class="form__input form__input_phone" placeholder="Telephone">
+              <input type="email" id="email" class="form__input form__input_email" placeholder="Email">
+              <textarea id="message" class="form__textarea" placeholder="Extra information"></textarea>
+              <button type="submit" id="submit__button" class="submit__button">Send</button>
+            </form>
+            <div id="feedback__message" class="popup__message"></div>
+          </div>
         </div>
-      </div>
-    </section>
-  </footer> 
+        <div class='footer-part'>
+          <div class='contact-container'>
+            <a class='logo' target="_blank" href='https://vk.com/smyark'> <img class='image-icon' src="images/vk-logo.png" alt="vk-logo"></a>
+            <a class='logo' target="_blank" href='https://t.me/Smyark1'> <img class='image-icon' src="images/tg-logo.png" alt="tg-logo"></a>
+            <a class='logo' target="_blank" href='https://github.com/Kakanom'> <img class='image-icon' src="images/github-logo.png" alt="github-logo"></a>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </div>
 
+
+  <div class="reminder__popup" id="reminder__popup">
+    <div class="reminder__popup-content">
+      <span class="reminder__popup-close" onclick="closeReminder()">&times;</span>
+      <p>Are you still here?</p>
+    </div>
+  </div>
+
+
+  <script src="scripts/gallery.js"></script>
+  <script src="scripts/rain.js"></script>
+  <script src="scripts/menu_scroll.js"></script>
+  <script src="scripts/feedback.js"></script>
+  <script src="scripts/timer.js"></script>
+  <script src="scripts/reminder.js"></script>
 </body>
 </html>
