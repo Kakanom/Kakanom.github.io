@@ -1,11 +1,11 @@
-function checkReminderClosed() {
-  return localStorage.getItem("reminder_closed") === "true";
-}
+// function checkReminderClosed() {
+//   return localStorage.getItem("reminder_closed") === "true";
+// }
 
 function showReminder() {
-  if (!checkReminderClosed) {
+  // if (!checkReminderClosed) {
     document.getElementById("reminder__popup").classList.add("open");
-  }
+  // }
 }
 
 function closeReminder() {
