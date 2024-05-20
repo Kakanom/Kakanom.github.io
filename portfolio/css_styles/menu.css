@@ -5,6 +5,7 @@
   height: 8vw;
   margin-right: 5vw;
   margin-left: 5vw;
+  z-index: 100000;
 }
 
 .menu__list {

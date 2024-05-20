@@ -36,8 +36,16 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function checkArrows() {
-        prevBtn.style.display = currentPopupIndex === 0 ? 'none' : 'block';
-        nextBtn.style.display = currentPopupIndex === galleryImages.length - 1 ? 'none' : 'block';
+        if (currentPopupIndex === 0) {
+            prevBtn.style.display = 'none';
+        } else {
+            prevBtn.style.display = 'block';
+        }
+        if (currentPopupIndex === galleryImages.length - 1) {
+            nextBtn.style.display = 'none';
+        } else {
+            nextBtn.style.display = 'block';
+        }
     }
 
     document.addEventListener('keydown', function(event) {
