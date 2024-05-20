@@ -6,7 +6,7 @@
 .timer__container {
   display: flex;
   flex-direction: column;
-  background-color: black;
+  background-color: transparent;
 }
 
 .timer__title {
