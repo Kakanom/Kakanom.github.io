@@ -22,9 +22,14 @@ document.getElementById("feedback__form").addEventListener("submit", function(ev
   }
 
   var phoneRegex = /^\+?(\d{1,3})\)?[- ]?(\d{3})[- ]?(\d{3})[- ]?(\d{2})[- ]?(\d{2})$/;
-  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!phoneRegex.test(phone) || !emailRegex.test(email)) {
-    alert("Please, enter the correct phone number and email");
+  var emailRegex = /^[^\s@]+\@[a-z]{2,4}\.[a-z]{2,4}$/;
+
+  if (!phoneRegex.test(phone)) {
+    alert("Please, enter the correct phone");
+    return;
+  }
+  if (!emailRegex.test(email)) {
+    alert("Please, enter the correct email");
     return;
   }
 

@@ -1,20 +1,15 @@
 function showReminder() {
   document.getElementById("reminder__popup").classList.add("open");
-  localStorage.setItem("reminder_opened", "true");
+  localStorage.setItem("reminder_closed", "false");
 }
 
 function closeReminder() {
   document.getElementById("reminder__popup").classList.remove("open");
-  localStorage.setItem("reminder_opened", "false");
-  setTimeout(showReminder, 10000);
+  localStorage.setItem("reminder_closed", "true");
 }
 
 window.onload = function() {
-  console.log(localStorage.getItem("reminder_opened"));
-  console.log(localStorage.getItem("reminder_opened") === "true");
-  if (localStorage.getItem("reminder_opened") === "true") {
-    showReminder();
-    return
+  if (localStorage.getItem("reminder_closed") === "false") {
+    setTimeout(showReminder, 10000);
   }
-  setTimeout(showReminder, 10000);
 };
