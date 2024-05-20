@@ -28,11 +28,12 @@
 }
 
 .form__input {
-  color: black;
+  color: white;
+  border: 1px solid white;;
 }
 
 .form__textarea {
-  color: black;
+  color: white;
 }
 
 .form__submit.disabled {
@@ -41,7 +42,7 @@
 }
 
 .submit__button {
-  color: black;
+  color: white;
   cursor: pointer;
 }
 
