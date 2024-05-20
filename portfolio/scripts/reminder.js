@@ -1,18 +1,20 @@
-// function checkReminderClosed() {
-//   return localStorage.getItem("reminder_closed") === "true";
-// }
-
 function showReminder() {
-  // if (!checkReminderClosed) {
-    document.getElementById("reminder__popup").classList.add("open");
-  // }
+  document.getElementById("reminder__popup").classList.add("open");
+  localStorage.setItem("reminder_opened", "true");
 }
 
 function closeReminder() {
   document.getElementById("reminder__popup").classList.remove("open");
-  localStorage.setItem("reminder_closed", "true");
+  localStorage.setItem("reminder_opened", "false");
+  setTimeout(showReminder, 10000);
 }
 
 window.onload = function() {
-  setTimeout(showReminder, 3000);
+  console.log(localStorage.getItem("reminder_opened"));
+  console.log(localStorage.getItem("reminder_opened") === "true");
+  if (localStorage.getItem("reminder_opened") === "true") {
+    showReminder();
+    return
+  }
+  setTimeout(showReminder, 10000);
 };
