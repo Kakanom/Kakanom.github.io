@@ -29,7 +29,7 @@ function playScreamer() {
 
       setTimeout(function() {
         screamImg.style.display = 'none';
-      }, 1900); // 1.9 seconds
+      }, 3800); // 3.8 seconds
     }, 2000); // 2-second delay before the screamer
     honk_counter = 0;
   }
