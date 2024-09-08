@@ -1,9 +1,18 @@
-.music_container-border {
-  border: 1mm ridge white;
-  border-radius: 10px;
-
+.music-box {
+  border-radius: 12px;
+  padding: 10px;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  background-image: linear-gradient(45deg, #f39c12, #e74c3c, #8e44ad, #3498db),
+                    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0));
+  background-size: 200% 200%, 100% 100%;
+  animation: gradient-animation 8s linear infinite;
 }
 
-.music-title {
-/*  width: 50%;*/
+@keyframes gradient-animation {
+  0% { background-position: 0% 0%, 0% 0%; }
+  50% { background-position: 100% 100%, 100% 100%; }
+  100% { background-position: 0% 0%, 0% 0%; }
 }
