@@ -84,16 +84,6 @@ body {
   display: inline-block;
 }
 
-.left-hand-image {
-  height: 20hv;
-  width: 20wv;
-}
-
-.right-hand-image {
-  height: 20hv;
-  width: 20wv;
-}
-
 @keyframes shake {
   0% { transform: translate(10px, 10px) rotate(360deg); }
   10% { transform: translate(-10px, -20px) rotate(-1deg); }

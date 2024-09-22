@@ -1,3 +1,7 @@
+.globe {
+  z-index: 100;
+}
+
 .globosling {
   position: absolute;
 /*  transform: translate(-50%, -50%);*/
@@ -25,42 +29,31 @@
   height: 30hv;
   width: 30wv;
 
-  animation: wave-left 1s infinite alternate;
+  animation: wave-left 2s ease-in-out infinite alternate;
 } 
 
 .right-hand-image {
   height: 30hv;
   width: 30wv;
 
-  animation: wave-right 1s infinite alternate;
+  animation: wave-right 2s ease-in-out infinite alternate;
 }
 
-@keyframes float {
-    0% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
-}
 
 @keyframes wave-left {
     0% {
-        transform: translateY(0px) rotate(0deg);
+        transform: translateX(-15px) translateY(0px) rotate(0deg);
     }
     100% {
-        transform: translateY(5px) rotate(7deg);
+        transform: translateX(55px) translateY(0px) rotate(-40deg);
     }
 }
 
 @keyframes wave-right {
     0% {
-        transform: translateY(0px) rotate(0deg);
+        transform: translateX(15px) translateY(0px) rotate(0deg);
     }
     100% {
-        transform: translateY(5px) rotate(-7deg);
+        transform: translateX(-55px) translateY(0px) rotate(40deg);
     }
 }
